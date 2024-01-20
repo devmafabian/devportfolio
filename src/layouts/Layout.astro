@@ -50,11 +50,13 @@ const { description, title } = Astro.props
     min-height: 100vh;
     overscroll-behavior: none;
   }
+
   @media (prefers-reduce-motion: reduce){
     html{
       scroll-behavior:auto;
     }
   }
+
   @media (prefers-color-scheme: dark) {
     body {
       color: rgba(255, 255, 255, 0.9);

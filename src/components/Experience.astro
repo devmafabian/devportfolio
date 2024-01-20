@@ -1,0 +1,33 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCE = [
+  {
+    date: 'Actualmente...',
+    title: 'Tutor de Matemáticas',
+    description:
+      'Proporcioné tutorías de matemáticas a estudiantes de nivel Universitario y pre Universitario con el objetivo de mejorar su comprensión y desempeño académico. Utilicé métodos efectivos de comunicación y ejemplos prácticos para facilitar la comprensión de conceptos matemáticos complejos.',
+  },
+  {
+    date: 'Noviembre 2013',
+    title: 'Distribuidor de Volantes, Prenda Efectivo',
+    description:
+      'Responsable de la entrega de volantes de la empresa de manera eficiente y efectiva, siguiendo las instrucciones y rutas establecidas.Demostré habilidades organizativas al planificar y coordinar la distribución de los volantes en diferentes áreas geográficas.',
+  },
+  {
+    date: 'Enero 2003',
+    title: 'Vendedor de Mostrador, La Cascada',
+    description:
+      'Atendí a los clientes en la tienda y proporcioné un excelente servicio al cliente, respondiendo preguntas y ayudando con las necesidades de compra.Gestioné el proceso de ventas, incluyendo el manejo de efectivo, la realización de transacciones y el seguimiento de inventario.',
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

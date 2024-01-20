@@ -1,0 +1,33 @@
+---
+const PROJECTS = [
+  {
+    title: 'Movie Web',
+    description:
+      'Lista de las películas más populares del año, acompañadas de descripciones detalladas y evaluaciones según la crítica especializada.',
+    link: 'https://movie-web-brown.vercel.app/',
+    github: 'https://github.com/Crisleop21/movie-web',
+    image: '/public/img/movie-web.webp',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
+  },
+]
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+        {title}
+      </h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/10" 
+        src={image} 
+        alt={`Captura de pantalla del proyecto ${image}`} />
+    </article>
+  ))
+}

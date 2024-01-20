@@ -10,6 +10,8 @@ import SectionContainer from '../components/SectionContainer.astro'
 import BriefCase from '../components/icons/BriefCase.astro'
 import CodeIcon from '../components/icons/Code.astro'
 import Projects from '../components/Projects.astro'
+import Profile from '../components/icons/Profile.astro'
+import AboutMe from '../components/AboutMe.astro'
 ---
 
 <Layout
@@ -35,9 +37,9 @@ import Projects from '../components/Projects.astro'
         </a>
       </h1>
       <h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
-        <span>Desarrollador y Programador Web. <span class="text-red-800 dark:text-red-200"> De Quetzaltenango, Guatemala</span>. <span class="text-sky-800 dark:text-sky-200"
+        <span>Desarrollador y Programador Web.</span><span class="text-red-800 dark:text-red-200"> De Quetzaltenango, Guatemala</span>. <span class="text-sky-800 dark:text-sky-200"
           >Especializado en la creación de aplicaciones a medida.</span
-        ></span>
+        >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap ">
@@ -70,6 +72,14 @@ import Projects from '../components/Projects.astro'
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
+        <Profile class="size-7" />
+        Sobre mi
+      </h2>
+      <AboutMe />
     </SectionContainer>
 
     
